@@ -5,7 +5,7 @@ public class DoubleOparatorMain{
 		// 1. 内部クラス宣言で DoubleOparatorインターフェースを実装してください
 		DoubleOparator doubleOpp = new DoubleOparator() {
 			@Override
-			public double applay(double x, double y) {
+			public double apply(double x, double y) {
 				return x + y;
 			}
 		};
@@ -16,9 +16,9 @@ public class DoubleOparatorMain{
 		DoubleOparator doubleOpp4 = (x , y) -> x + y;
 	
 		// メソッドの実行
-		System.out.println("結果：" + doubleOpp2.applay(1.0 , 3.0));
-		System.out.println("結果：" + doubleOpp3.applay(1.0 , 3.0));
-		System.out.println("結果：" + doubleOpp4.applay(1.0 , 3.0));
+		System.out.println("結果：" + doubleOpp2.apply(1.0 , 3.0));
+		System.out.println("結果：" + doubleOpp3.apply(1.0 , 3.0));
+		System.out.println("結果：" + doubleOpp4.apply(1.0 , 3.0));
 
 	}
 }
